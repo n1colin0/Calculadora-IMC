@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Centralizar e estilizar o container */
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilização dos títulos */
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #007ba7;
+    font-weight: bold;
+}
+
+/* Grupos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilo dos inputs */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+/* Cor de borda ao focar no input */
+input:focus {
+    border-color: #007ba7;
+    outline: none;
+}
+
+/* Estilização dos botões */
+button {
+    background-color: #007ba7;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #005f75;
+    box-shadow: 0 5px 15px rgba(0, 91, 113, 0.3);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Resultado do IMC */
+#result {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
